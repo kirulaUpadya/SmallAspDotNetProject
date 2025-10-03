@@ -1,33 +1,23 @@
-###############################################################################
-# Normalize line endings
-###############################################################################
-* text=auto
+# Force GitHub to detect only C# files
+*.cs linguist-language=C#
 
-###############################################################################
-# Language overrides to improve GitHub language detection
-###############################################################################
-*.cs      linguist-language=C#
-*.cshtml  linguist-language=Razor
-*.aspx    linguist-language=ASP.NET
-
-###############################################################################
-# Exclude static files from language stats to emphasize backend code
-###############################################################################
-*.html    linguist-detectable=false
-*.css     linguist-detectable=false
-*.js      linguist-detectable=false
-
-###############################################################################
-# Optional: treat Visual Studio project/solution files as binary to prevent merge conflicts
-###############################################################################
-#*.sln       merge=binary
-#*.csproj    merge=binary
-#*.vbproj    merge=binary
-#*.fsproj    merge=binary
-
-###############################################################################
-# Optional: treat common binary assets as binary
-###############################################################################
-#*.png binary
-#*.jpg binary
-#*.gif binary
+# Exclude all other common file types from language stats
+*.cshtml linguist-detectable=false
+*.aspx linguist-detectable=false
+*.html linguist-detectable=false
+*.htm linguist-detectable=false
+*.css linguist-detectable=false
+*.js linguist-detectable=false
+*.json linguist-detectable=false
+*.xml linguist-detectable=false
+*.config linguist-detectable=false
+*.png linguist-detectable=false
+*.jpg linguist-detectable=false
+*.jpeg linguist-detectable=false
+*.gif linguist-detectable=false
+*.svg linguist-detectable=false
+*.ico linguist-detectable=false
+*.txt linguist-detectable=false
+*.md linguist-detectable=false
+*.yml linguist-detectable=false
+*.yaml linguist-detectable=false
