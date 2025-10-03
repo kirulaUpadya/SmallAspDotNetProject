@@ -65,7 +65,12 @@
 ###############################################################################
 # Language overrides for GitHub linguist (to improve language detection)
 ###############################################################################
+# Force GitHub to count C# and Razor/ASP.NET correctly
 *.cs linguist-language=C#
 *.cshtml linguist-language=Razor
 *.aspx linguist-language=ASP.NET
-*.html linguist-language=HTML
+
+# Tell GitHub to ignore HTML/CSS/JS in language stats
+*.html linguist-detectable=false
+*.css linguist-detectable=false
+*.js linguist-detectable=false
