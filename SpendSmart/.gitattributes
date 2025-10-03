@@ -1,0 +1,4 @@
+*.cs linguist-language=C#
+*.cshtml linguist-language=Razor
+*.aspx linguist-language=ASP.NET
+*.html linguist-language=HTML
