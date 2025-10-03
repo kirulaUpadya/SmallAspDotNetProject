@@ -61,6 +61,10 @@
 #*.PDF   diff=astextplain
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
+
+###############################################################################
+# Language overrides for GitHub linguist (to improve language detection)
+###############################################################################
 *.cs linguist-language=C#
 *.cshtml linguist-language=Razor
 *.aspx linguist-language=ASP.NET
